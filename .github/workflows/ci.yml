@@ -16,4 +16,5 @@ jobs:
     runs-on: ubuntu-latest
     needs: terraform-validate
     steps:
-      - run: echo "Deploiement cible : ${{ vars.APP_ENV }}"
+      - run: |
+          echo "Deploiement cible : ${{ vars.APP_ENV }}"
